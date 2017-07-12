@@ -1,15 +1,5 @@
 <template>
     <div>
-        <testing></testing>
+        <h1>Fullscreen loader</h1>
     </div>
 </template>
-
-<script>
-    import Testing from './testing.vue'
-
-    export default {
-        component: {
-            Testing
-        }
-    }
-</script>
