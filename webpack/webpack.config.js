@@ -1,12 +1,13 @@
+const path = require('path')
 const webpack = require('webpack')
-const htmlPlugin = require('webpack-html-plugin')
+const htmlPlugin = require('html-webpack-plugin')
 
 module.exports = {
 
-  entry: 'src/main.js',
+  entry: path.resolve('src/main.js'),
 
   output: {
-    path: 'dist',
+    path: path.resolve('dist'),
     filename: 'bundle.js'
   },
 
@@ -34,7 +35,7 @@ module.exports = {
 
   plugins: [
     new htmlPlugin({
-      template: 'src/index.html',
+      template: path.resolve('src/index.html'),
       filename: 'index.html',
       inject: 'body'
     })
