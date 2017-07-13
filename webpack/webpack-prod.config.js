@@ -7,7 +7,7 @@ module.exports = {
 
   output: {
     path: path.resolve('build'),
-    filename: 'vue-fullscree-loading.js'
+    filename: 'vue-fullscreen-loading.js'
   },
 
   module: {

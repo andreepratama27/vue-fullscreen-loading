@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import LoadingOverlay from './loading-overlay.vue'
+import FullscreenLoading from './fullscreen-loading.vue'
 
 export default {
 
@@ -16,7 +16,7 @@ export default {
   render (h) {
     return (
       <div>
-          <loading-overlay image="http://placehold.it/300x300" show={ this.isShow }></loading-overlay>
+          <fullscreen-loading image="http://placehold.it/300x300" show={ this.isShow }></fullscreen-loading>
       </div>
     )
   }
