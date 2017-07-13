@@ -29,7 +29,7 @@
 <template>
 	<div class="loading-overlay" v-if="show">
 		<div class="animated-box">
-			<img :src="image" alt="" class="img img -responsive">
+			<img :src="image" alt="" class="img img-responsive">
 		</div>
 	</div>
 </template>
@@ -37,7 +37,16 @@
 <script>
 	export default {
 
-		props: ['image', 'show']
+        props: {
+            image: {
+                required: true,
+                type: String
+            },
+
+            show: {
+                default: false
+            }
+        }
 
 	}
 </script>

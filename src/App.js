@@ -1,16 +1,22 @@
 import Vue from 'vue'
-import App from './App.vue'
+import LoadingOverlay from './loading-overlay.vue'
 
 export default {
 
+  data () {
+    return {
+      isShow: true
+    }
+  },
+
   components: {
-    App
+    LoadingOverlay
   },
 
   render (h) {
     return (
       <div>
-          <app></app>
+          <loading-overlay image="http://placehold.it/300x300" show={ this.isShow }></loading-overlay>
       </div>
     )
   }
