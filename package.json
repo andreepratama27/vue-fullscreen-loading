@@ -1,6 +1,6 @@
 {
   "name": "vue-fullscreen-loading",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -12,6 +12,16 @@
   "dependencies": {
     "webpack-dev-server": "^2.5.1"
   },
+	"keywords": [
+		"vue",
+		"vue2",
+		"loading",
+		"fullscreen",
+		"animate",
+		"load"
+	],
+	"author": "Andre Pratama <andreepratama27@gmail.com>",
+	"homepage": "https://github.com/andreepratama27/vue-fullscreen-loading#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
