@@ -6,11 +6,6 @@ module.exports = {
 
   entry: path.resolve('src/main.js'),
 
-  output: {
-    path: path.resolve('dist'),
-    filename: 'bundle.js'
-  },
-
   module: {
     rules: [
       {
@@ -35,7 +30,7 @@ module.exports = {
 
   plugins: [
     new htmlPlugin({
-      template: path.resolve('src/index.html'),
+      template: path.resolve('index.html'),
       filename: 'index.html',
       inject: 'body'
     })
