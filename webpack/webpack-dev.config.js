@@ -1,17 +1,25 @@
-const path = require('path')
 const webpack = require('webpack')
+const path = require('path')
 const htmlPlugin = require('html-webpack-plugin')
 
 module.exports = {
 
   entry: path.resolve('src/main.js'),
 
+  devServer: {
+    port: 1000,
+    inline: true
+  },
+
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
       },
       {
         test: /\.vue$/,
@@ -22,7 +30,7 @@ module.exports = {
         loader: 'style-loader!css-loader'
       },
       {
-        test: /\.scss$/,
+        test: /\.s[a|c]ss$/,
         loader: 'css-loader!sass-loader'
       }
     ]

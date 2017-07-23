@@ -3,6 +3,12 @@ import FullscreenLoading from './fullscreen-loading.vue'
 
 export default {
 
+  mounted () {
+    setTimeout(() => {
+      this.isShow = false
+    }, 3000)
+  },
+
   data () {
     return {
       isShow: true
@@ -10,7 +16,7 @@ export default {
   },
 
   components: {
-    LoadingOverlay
+    FullscreenLoading
   },
 
   render (h) {
